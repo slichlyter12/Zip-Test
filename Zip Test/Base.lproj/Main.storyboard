@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Zip_Test" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ge-6V-g2t">
+                                <rect key="frame" x="112" y="361" width="151" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="1lX-W6-Kci">
+                                <rect key="frame" x="112" y="390" width="151" height="2"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9Ge-6V-g2t" firstAttribute="leading" secondItem="1lX-W6-Kci" secondAttribute="leading" id="85j-WV-Nao"/>
+                            <constraint firstItem="9Ge-6V-g2t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="341" id="Jbl-Ne-Wdx"/>
+                            <constraint firstItem="9Ge-6V-g2t" firstAttribute="trailing" secondItem="1lX-W6-Kci" secondAttribute="trailing" id="To6-Mz-Jnh"/>
+                            <constraint firstItem="1lX-W6-Kci" firstAttribute="top" secondItem="9Ge-6V-g2t" secondAttribute="bottom" constant="8" symbolic="YES" id="V94-Yk-RJp"/>
+                            <constraint firstItem="9Ge-6V-g2t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="j0Q-Ep-XF9"/>
+                            <constraint firstItem="9Ge-6V-g2t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="112" id="t2z-4d-TRP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressLabel" destination="9Ge-6V-g2t" id="i6n-yv-RyK"/>
+                        <outlet property="progressView" destination="1lX-W6-Kci" id="Fuv-NK-iG0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.200000000000003" y="20.689655172413794"/>
+        </scene>
+    </scenes>
+</document>
